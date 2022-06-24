@@ -1,7 +1,7 @@
 {
   "name": "@dashevo/dash-spv",
   "version": "1.1.6",
-  "description": "Temporary repo until spv functions moved into dashcore-lib",
+  "description": "Repository containing SPV functions used by @dashevo",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/ --no-timeouts --recursive",
