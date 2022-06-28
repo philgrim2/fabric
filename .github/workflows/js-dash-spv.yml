@@ -10,6 +10,7 @@ on:
       - .github/workflows/js-dash-spv.yml
       - .github/workflows/test.yml
       - packages/js-dash-spv/**
+      - packages/js-dapi-client/**
 
 jobs:
   js-dash-sdk-tests:
