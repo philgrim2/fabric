@@ -385,6 +385,31 @@ Then specify the created dotenv file as an option for the `docker-compose` comma
 $ docker-compose --env-file=.env.testnet up -d
 ```
 
+## Upgrade
+
+Before applying an upgrade, local network should be stopped and reset via ``dashmate reset --hard``. In some cases, hard reset or manual reset must be executed:
+
+* Upgrade contains non-compatible changes (f.e. switching between v22/v23)
+* Command ``dashmate setup`` finished with errors or interrupted in the process
+
+### Hard reset
+
+``dashmate reset --hard``
+
+This command cleans up all related containers and volumes. You can run setup command again after invoking this command.
+
+### Manual reset
+
+Manual reset is used when local setup corrupts and hard reset does not fix it. This could happen, when dashmate configuration becomes incompatible after a major upgrade, making you unable to execute any commands.
+
+```bash
+docker stop $(docker ps -q)
+docker system prune
+docker volume prune
+rm -rf ~/.dashmate/
+```
+
+
 ## Contributing
 
 Feel free to dive in! [Open an issue](https://github.com/dashevo/platform/issues/new/choose) or submit PRs.
