@@ -1,3 +1,4 @@
+<p>This is the beginning of converting Dash Platform to Thought Fabric</p>
 <p align="center">
   <a href="https://dashplatform.readme.io/docs/introduction-what-is-dash-platform/">
     <img alt="babel" src="https://media.dash.org/wp-content/uploads/dash_digital-cash_logo_2018_rgb_for_screens.png" width="546">
